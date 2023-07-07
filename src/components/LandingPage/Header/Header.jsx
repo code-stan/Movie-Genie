@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
-import { config } from "../config";
+import { config } from "../../../../config";
 import { useContext } from 'react';
 import { Renderer } from '../LandingPage';
 
