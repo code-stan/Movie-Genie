@@ -8,7 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 .env
 config.js
-src/Screenshots
 node_modules
 dist
 dist-ssr
