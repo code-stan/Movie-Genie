@@ -15,7 +15,7 @@
 
 ### Desktop Screenshot
 
-![desktop-preview](./public/Screenshots/MovieGenie-Desktop.png)
+![desktop-preview](./src/Screenshots/MovieGenie-Desktop.png)
 
 ## Built with
 
