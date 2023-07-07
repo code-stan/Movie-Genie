@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    scrollbar-width: thin;
+    scrollbar-color: $White black;
+}
+
+body {
+    background-color: $Dark-Background;
+    font-family: Open Sans, system-ui, -apple-system, sans-serif;
+    font-size: 1.6rem;
+    color: $White;
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+
+/* =========================
+      |GENERAL STYLINGS|
+========================= */
+::-webkit-scrollbar{
+    width: .8rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: .8rem;
+    background-color: $White;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+li {
+    list-style: none;
+}
+
+.section {
+    padding-inline: 5%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

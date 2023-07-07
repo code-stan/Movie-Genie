@@ -1,0 +1,25 @@
+$Dark-Background: #222;
+$White: #fafafa;
+$Accent-Gradient: linear-gradient(to top right, #fe7333, #0f0fff);
+
+
+@font-face{
+    font-family: Montserrat;
+    src: url(/src/Fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Open Sans;
+    src: url(/src/Fonts/OpenSans.ttf);
+}
+@mixin flex($align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+//MEDIA MIXIN
+@mixin media($width){
+    @media screen and (min-width: $width) {
+        @content
+    }
+}

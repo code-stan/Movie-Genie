@@ -1,0 +1,49 @@
+.main-container{
+    margin: 5rem 2rem;
+    @include flex(stretch, center);
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include media(55rem){
+        @include flex(inherit, start);
+    }
+}
+.movie-container{
+    @include flex(center, center);
+    flex-direction: column;
+    width: 30rem; aspect-ratio: 1 / 1.2;
+    position: relative;
+    overflow: hidden;
+
+    .info-container{
+        position: absolute;
+        inset: auto 0 0;
+        background-color: #444;
+        padding-top: 1rem;
+        
+        .title{
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+.image-container{
+    width: 100%; height: 100%;
+
+    img{
+        transition: scale .2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        width: 100%; height: 100%;
+        object-fit: cover;
+        &:is(:hover, :focus){
+            scale: 1.1;
+        }
+    }
+}
+
+// nullll
+
+.null{
+    width: 100%;
+    @include flex(center, center);
+    margin-top: 5rem;
+    font-size: 3rem;
+}
